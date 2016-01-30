@@ -1,0 +1,71 @@
+Project #1
+
+Group Member:
+Lan Lyu,   id: lyul
+Fang Chen, id: fangchen
+
+Environment:
+JavaSE-1.8
+
+Compile Step:
+1. Go to each folder, like 'tcp_client', 'tcp_server', 'udp_client', 'udp_server'
+2. Execute command 'make'
+
+Run the Programs:
+
+	TCP Server: 
+	Under 'tcp_server' folder, compile the files, then execute "java TCPServer [port]", 
+	the only one parameter is the port number, you can give any you want. 
+	Or you can run the program without any parameter, the program will start with a default port: 9999
+	
+	TCP Client:
+	Under 'tcp_client' folder, compile the files, then execute "java ClientTCP [server_ip] [server_port]" 
+	If you did not provide that two parameters, the program will start and communicat with 127.0.0.1: 9999
+	
+	UDP Server:
+	Under 'udp_server' folder, compile the files, then execute "java UDPServer [port]", 
+	the only one parameter is the port number, you can give any you want. 
+	Or you can run the program without any parameter, the program will start with a default port: 9997
+	
+	UDP Client:
+	Under 'udp_client' folder, compile the files, then execute "java ClientUDP [server_ip] [server_port]" 
+	If you did not provide that two parameters, the program will start and communicat with 127.0.0.1: 9997
+
+Assignment Overview:
+The assignment is to ask us to write program to use 'Socket' to communicate between Server and Client. We need to understand the difference
+between two transportation mechanisms: TCP and UDP. We need to handle the situation when transportation error happens, like when the client 
+has not received any response from Server within a given time, we need add retry logic, and add sleep time between each retry. The script contains
+bulk of operations, each line is one operation. There are three types of operation: PUT, GET and DELETE. And each legal operation can only be 
+written as "PUT Key Value", "GET Key" or "DELETE Key", and all the other formates will be viewed as malformed requests. When the client send a
+request to the server and the server has processed it, it will return a "Success" message, otherwise it will give a "Error" message as well as the 
+failed reason.
+
+
+Technical Impression:
+	Client Code Impression:
+	The TCP client uses Socket, its method "getInputStream()" will return the input stream, then we can use BufferedReader to read the message from
+	the Socket. When write to server, the DataOutputStream.writeBytes(String) must write an line break '\n', otherwise the continuous message will 
+	not be sent anymore. Before the client creates its socket, there is a 'detection' mechanism, that is the client will detect if the server is on-line.
+	If server is not reachable, the client will terminate. And there is 're-try' logic when received message from Server is null or empty, but it did not
+	happen ever during our testing.
+	The UDP client uses DatagramSocket and DatagramPacket to compelte the communication with server. The setSoTimeout() method is called to set a time out
+	when receiving from server, when time is out, exception is thrown, then I catch it and go to retry logic, which means ask client to send the same message
+	to Server again. In this case, I assume that server has not received the operation from client so that no message sent back to client. That is why re-try
+	logic will resend the same operation to the server.
+
+	Server Code Impression:
+	When coding the Server class, I first learned the basic code frame and API of java server socket programing, based on some server programing examples 
+	searched on the internet. The rest main job for me is how to operate the request, a String value, received from the client. I have to recognize what 
+	kind of operation (PUT, GET and DELETE) the client want me to do, and if the request is formed or malformed. And I also learned something new about 
+	how to get the Args parameter as the port number, which is more user-friendly.
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+PUT key1 value1
+GET key1
+DELETE key1
+PUT key2 value2
+GET key2
+DELETE key2
+PUT key3 value3
+GET key3
+DELETE key3
+PUT key4 value4
+GET key4
+DELETE key4
+PUT key5 value5
+GET key5
+DELETE key5
+PUT key6 value6
+GET key6
+DELETE key6
+PUT key7 value7
+GET key7
+DELETE key7
+PUT key8 value8
+GET key8
+DELETE key8
+PUT key9 value9
+GET key9
+DELETE key9
+PUT key10 value10
+GET key10
+DELETE key10
+PUT key11 value11
+PUT key12 value11
+PUT key13 value13
+PUT key14 value14
+PUT key15 value15
+PUT key16 value16
+PUT key17 value17
+PUT key18 value18
+PUT key19 value19
+PUT key20 value20
+DELETE key11
+DELETE key12
+DELETE key13
+DELETE key14
+DELETE key15
+DELETE key16
+DELETE key17
+DELETE key18
+DELETE key19
+DELETE key20
+UNKNOWN key1 value1
+PUT
+GET
+DELETE
+GET unexistkey
+DELETE unexistkey
