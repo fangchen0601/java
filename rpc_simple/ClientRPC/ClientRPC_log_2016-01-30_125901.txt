@@ -1,0 +1,7 @@
+2016-01-30T00:59:01.378: Server IP is not provided as a parameter, use default ip address: 127.0.0.1
+2016-01-30T00:59:03.611: Read a line from script file: PUT key1 value1
+2016-01-30T00:59:03.614: Send to server: PUT key1 value1
+2016-01-30T00:59:03.621: Get response from server: PUT key1, value1 SUCESS.
+2016-01-30T00:59:05.622: Read a line from script file: PUT key1 value1
+2016-01-30T00:59:05.625: Send to server: PUT key1 value1
+2016-01-30T00:59:05.630: Get response from server: The server has the key pair, can't PUT again.

@@ -1,0 +1,15 @@
+2016-01-30T00:30:29.421: Use default port number '1099' for rmiregistry...
+2016-01-30T00:30:29.498: Creating server...
+2016-01-30T00:30:29.499: Creating server done
+2016-01-30T00:30:29.661: Binding remote object's stub...
+2016-01-30T00:30:30.710: Binding done.
+2016-01-30T00:30:37.922: Got the command: PUT key1 value1
+2016-01-30T00:30:37.923: PUT key1, value1 SUCESS.
+2016-01-30T00:30:39.928: Got the command: PUT key1 value1
+2016-01-30T00:30:39.928: The server has the key pair, can't PUT again.
+2016-01-30T00:48:51.920: Got the command: PUT key1 value1
+2016-01-30T00:48:51.923: The server has the key pair, can't PUT again.
+2016-01-30T00:48:54.190: Got the command: 
+2016-01-30T00:48:54.192: Error! Malformed Request! The request is: 
+2016-01-30T00:51:14.048: Got the command: PUT key1 value1
+2016-01-30T00:51:14.049: The server has the key pair, can't PUT again.

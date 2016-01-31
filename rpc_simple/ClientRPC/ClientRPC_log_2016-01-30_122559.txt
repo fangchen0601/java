@@ -1,0 +1,169 @@
+2016-01-30T00:25:59.916: Server IP is not provided as a parameter, use default ip address: 127.0.0.1
+2016-01-30T00:26:02.149: Read a line from script file: PUT key1 value1
+2016-01-30T00:26:02.151: Send to server: PUT key1 value1
+2016-01-30T00:26:02.155: Get response from server: PUT:key1, value1 SUCESS.
+2016-01-30T00:26:04.156: Read a line from script file: GET key1
+2016-01-30T00:26:04.158: Send to server: GET key1
+2016-01-30T00:26:04.160: Get response from server: Get the value: value1 for the key: key1
+2016-01-30T00:26:06.161: Read a line from script file: DELETE key1
+2016-01-30T00:26:06.163: Send to server: DELETE key1
+2016-01-30T00:26:06.165: Get response from server: Removed the key: key1
+2016-01-30T00:26:08.166: Read a line from script file: PUT key2 value2
+2016-01-30T00:26:08.169: Send to server: PUT key2 value2
+2016-01-30T00:26:08.174: Get response from server: PUT:key2, value2 SUCESS.
+2016-01-30T00:26:10.176: Read a line from script file: GET key2
+2016-01-30T00:26:10.177: Send to server: GET key2
+2016-01-30T00:26:10.180: Get response from server: Get the value: value2 for the key: key2
+2016-01-30T00:26:12.180: Read a line from script file: DELETE key2
+2016-01-30T00:26:12.181: Send to server: DELETE key2
+2016-01-30T00:26:12.184: Get response from server: Removed the key: key2
+2016-01-30T00:26:14.184: Read a line from script file: PUT key3 value3
+2016-01-30T00:26:14.185: Send to server: PUT key3 value3
+2016-01-30T00:26:14.189: Get response from server: PUT:key3, value3 SUCESS.
+2016-01-30T00:26:16.189: Read a line from script file: GET key3
+2016-01-30T00:26:16.191: Send to server: GET key3
+2016-01-30T00:26:16.194: Get response from server: Get the value: value3 for the key: key3
+2016-01-30T00:26:18.195: Read a line from script file: DELETE key3
+2016-01-30T00:26:18.197: Send to server: DELETE key3
+2016-01-30T00:26:18.199: Get response from server: Removed the key: key3
+2016-01-30T00:26:20.200: Read a line from script file: PUT key4 value4
+2016-01-30T00:26:20.201: Send to server: PUT key4 value4
+2016-01-30T00:26:20.204: Get response from server: PUT:key4, value4 SUCESS.
+2016-01-30T00:26:22.204: Read a line from script file: GET key4
+2016-01-30T00:26:22.206: Send to server: GET key4
+2016-01-30T00:26:22.209: Get response from server: Get the value: value4 for the key: key4
+2016-01-30T00:26:24.210: Read a line from script file: DELETE key4
+2016-01-30T00:26:24.212: Send to server: DELETE key4
+2016-01-30T00:26:24.214: Get response from server: Removed the key: key4
+2016-01-30T00:26:26.214: Read a line from script file: PUT key5 value5
+2016-01-30T00:26:26.215: Send to server: PUT key5 value5
+2016-01-30T00:26:26.218: Get response from server: PUT:key5, value5 SUCESS.
+2016-01-30T00:26:28.220: Read a line from script file: GET key5
+2016-01-30T00:26:28.221: Send to server: GET key5
+2016-01-30T00:26:28.224: Get response from server: Get the value: value5 for the key: key5
+2016-01-30T00:26:30.224: Read a line from script file: DELETE key5
+2016-01-30T00:26:30.226: Send to server: DELETE key5
+2016-01-30T00:26:30.228: Get response from server: Removed the key: key5
+2016-01-30T00:26:32.228: Read a line from script file: PUT key6 value6
+2016-01-30T00:26:32.229: Send to server: PUT key6 value6
+2016-01-30T00:26:32.232: Get response from server: PUT:key6, value6 SUCESS.
+2016-01-30T00:26:34.239: Read a line from script file: GET key6
+2016-01-30T00:26:34.240: Send to server: GET key6
+2016-01-30T00:26:34.242: Get response from server: Get the value: value6 for the key: key6
+2016-01-30T00:26:36.243: Read a line from script file: DELETE key6
+2016-01-30T00:26:36.244: Send to server: DELETE key6
+2016-01-30T00:26:36.247: Get response from server: Removed the key: key6
+2016-01-30T00:26:38.248: Read a line from script file: PUT key7 value7
+2016-01-30T00:26:38.249: Send to server: PUT key7 value7
+2016-01-30T00:26:38.252: Get response from server: PUT:key7, value7 SUCESS.
+2016-01-30T00:26:40.252: Read a line from script file: GET key7
+2016-01-30T00:26:40.254: Send to server: GET key7
+2016-01-30T00:26:40.256: Get response from server: Get the value: value7 for the key: key7
+2016-01-30T00:26:42.257: Read a line from script file: DELETE key7
+2016-01-30T00:26:42.260: Send to server: DELETE key7
+2016-01-30T00:26:42.264: Get response from server: Removed the key: key7
+2016-01-30T00:26:44.266: Read a line from script file: PUT key8 value8
+2016-01-30T00:26:44.268: Send to server: PUT key8 value8
+2016-01-30T00:26:44.270: Get response from server: PUT:key8, value8 SUCESS.
+2016-01-30T00:26:46.272: Read a line from script file: GET key8
+2016-01-30T00:26:46.273: Send to server: GET key8
+2016-01-30T00:26:46.275: Get response from server: Get the value: value8 for the key: key8
+2016-01-30T00:26:48.275: Read a line from script file: DELETE key8
+2016-01-30T00:26:48.276: Send to server: DELETE key8
+2016-01-30T00:26:48.279: Get response from server: Removed the key: key8
+2016-01-30T00:26:50.279: Read a line from script file: PUT key9 value9
+2016-01-30T00:26:50.280: Send to server: PUT key9 value9
+2016-01-30T00:26:50.283: Get response from server: PUT:key9, value9 SUCESS.
+2016-01-30T00:26:52.284: Read a line from script file: GET key9
+2016-01-30T00:26:52.285: Send to server: GET key9
+2016-01-30T00:26:52.288: Get response from server: Get the value: value9 for the key: key9
+2016-01-30T00:26:54.288: Read a line from script file: DELETE key9
+2016-01-30T00:26:54.290: Send to server: DELETE key9
+2016-01-30T00:26:54.292: Get response from server: Removed the key: key9
+2016-01-30T00:26:56.293: Read a line from script file: PUT key10 value10
+2016-01-30T00:26:56.294: Send to server: PUT key10 value10
+2016-01-30T00:26:56.296: Get response from server: PUT:key10, value10 SUCESS.
+2016-01-30T00:26:58.297: Read a line from script file: GET key10
+2016-01-30T00:26:58.299: Send to server: GET key10
+2016-01-30T00:26:58.302: Get response from server: Get the value: value10 for the key: key10
+2016-01-30T00:27:00.303: Read a line from script file: DELETE key10
+2016-01-30T00:27:00.304: Send to server: DELETE key10
+2016-01-30T00:27:00.307: Get response from server: Removed the key: key10
+2016-01-30T00:27:02.308: Read a line from script file: PUT key11 value11
+2016-01-30T00:27:02.311: Send to server: PUT key11 value11
+2016-01-30T00:27:02.314: Get response from server: PUT:key11, value11 SUCESS.
+2016-01-30T00:27:04.315: Read a line from script file: PUT key12 value11
+2016-01-30T00:27:04.316: Send to server: PUT key12 value11
+2016-01-30T00:27:04.319: Get response from server: PUT:key12, value11 SUCESS.
+2016-01-30T00:27:06.320: Read a line from script file: PUT key13 value13
+2016-01-30T00:27:06.321: Send to server: PUT key13 value13
+2016-01-30T00:27:06.324: Get response from server: PUT:key13, value13 SUCESS.
+2016-01-30T00:27:08.324: Read a line from script file: PUT key14 value14
+2016-01-30T00:27:08.325: Send to server: PUT key14 value14
+2016-01-30T00:27:08.328: Get response from server: PUT:key14, value14 SUCESS.
+2016-01-30T00:27:10.328: Read a line from script file: PUT key15 value15
+2016-01-30T00:27:10.329: Send to server: PUT key15 value15
+2016-01-30T00:27:10.333: Get response from server: PUT:key15, value15 SUCESS.
+2016-01-30T00:27:12.334: Read a line from script file: PUT key16 value16
+2016-01-30T00:27:12.335: Send to server: PUT key16 value16
+2016-01-30T00:27:12.338: Get response from server: PUT:key16, value16 SUCESS.
+2016-01-30T00:27:14.338: Read a line from script file: PUT key17 value17
+2016-01-30T00:27:14.339: Send to server: PUT key17 value17
+2016-01-30T00:27:14.341: Get response from server: PUT:key17, value17 SUCESS.
+2016-01-30T00:27:16.342: Read a line from script file: PUT key18 value18
+2016-01-30T00:27:16.343: Send to server: PUT key18 value18
+2016-01-30T00:27:16.347: Get response from server: PUT:key18, value18 SUCESS.
+2016-01-30T00:27:18.348: Read a line from script file: PUT key19 value19
+2016-01-30T00:27:18.349: Send to server: PUT key19 value19
+2016-01-30T00:27:18.353: Get response from server: PUT:key19, value19 SUCESS.
+2016-01-30T00:27:20.354: Read a line from script file: PUT key20 value20
+2016-01-30T00:27:20.355: Send to server: PUT key20 value20
+2016-01-30T00:27:20.357: Get response from server: PUT:key20, value20 SUCESS.
+2016-01-30T00:27:22.358: Read a line from script file: DELETE key11
+2016-01-30T00:27:22.359: Send to server: DELETE key11
+2016-01-30T00:27:22.362: Get response from server: Removed the key: key11
+2016-01-30T00:27:24.362: Read a line from script file: DELETE key12
+2016-01-30T00:27:24.363: Send to server: DELETE key12
+2016-01-30T00:27:24.366: Get response from server: Removed the key: key12
+2016-01-30T00:27:26.367: Read a line from script file: DELETE key13
+2016-01-30T00:27:26.368: Send to server: DELETE key13
+2016-01-30T00:27:26.372: Get response from server: Removed the key: key13
+2016-01-30T00:27:28.373: Read a line from script file: DELETE key14
+2016-01-30T00:27:28.374: Send to server: DELETE key14
+2016-01-30T00:27:28.376: Get response from server: Removed the key: key14
+2016-01-30T00:27:30.377: Read a line from script file: DELETE key15
+2016-01-30T00:27:30.378: Send to server: DELETE key15
+2016-01-30T00:27:30.381: Get response from server: Removed the key: key15
+2016-01-30T00:27:32.381: Read a line from script file: DELETE key16
+2016-01-30T00:27:32.382: Send to server: DELETE key16
+2016-01-30T00:27:32.384: Get response from server: Removed the key: key16
+2016-01-30T00:27:34.385: Read a line from script file: DELETE key17
+2016-01-30T00:27:34.387: Send to server: DELETE key17
+2016-01-30T00:27:34.391: Get response from server: Removed the key: key17
+2016-01-30T00:27:36.392: Read a line from script file: DELETE key18
+2016-01-30T00:27:36.393: Send to server: DELETE key18
+2016-01-30T00:27:36.395: Get response from server: Removed the key: key18
+2016-01-30T00:27:38.397: Read a line from script file: DELETE key19
+2016-01-30T00:27:38.398: Send to server: DELETE key19
+2016-01-30T00:27:38.400: Get response from server: Removed the key: key19
+2016-01-30T00:27:40.402: Read a line from script file: DELETE key20
+2016-01-30T00:27:40.405: Send to server: DELETE key20
+2016-01-30T00:27:40.408: Get response from server: Removed the key: key20
+2016-01-30T00:27:42.408: Read a line from script file: UNKNOWN key1 value1
+2016-01-30T00:27:42.409: Send to server: UNKNOWN key1 value1
+2016-01-30T00:27:42.411: Get response from server: Error! Malformed Request! The request is: UNKNOWN key1 value1
+2016-01-30T00:27:44.412: Read a line from script file: PUT
+2016-01-30T00:27:44.413: Send to server: PUT
+2016-01-30T00:27:44.415: Get response from server: Error! Malformed Request! The request is: PUT
+2016-01-30T00:27:46.416: Read a line from script file: GET
+2016-01-30T00:27:46.417: Send to server: GET
+2016-01-30T00:27:46.420: Get response from server: Error! Malformed Request! The request is: GET
+2016-01-30T00:27:48.421: Read a line from script file: DELETE
+2016-01-30T00:27:48.422: Send to server: DELETE
+2016-01-30T00:27:48.424: Get response from server: Error! Malformed Request! The request is: DELETE
+2016-01-30T00:27:50.424: Read a line from script file: GET unexistkey
+2016-01-30T00:27:50.425: Send to server: GET unexistkey
+2016-01-30T00:27:50.428: Get response from server: There is no key: unexistkey in the server store.
+2016-01-30T00:27:52.428: Read a line from script file: DELETE unexistkey
+2016-01-30T00:27:52.430: Send to server: DELETE unexistkey
+2016-01-30T00:27:52.432: Get response from server: There is no key: unexistkey in the server store.

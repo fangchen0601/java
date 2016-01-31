@@ -1,0 +1,10 @@
+2016-01-29T23:33:36.021: Server IP is not provided as a parameter, use default ip address: 127.0.0.1
+2016-01-29T23:33:36.279: Read a line from script file: PUT key1 value1, PUT key2 value2, PUT key3 value3
+2016-01-29T23:33:36.281: Send to server: PUT key1 value1, PUT key2 value2, PUT key3 value3
+2016-01-29T23:33:36.283: Get response from server: Got your message: line
+2016-01-29T23:33:36.284: Read a line from script file: GET key1, GET key2, GET key3
+2016-01-29T23:33:36.285: Send to server: GET key1, GET key2, GET key3
+2016-01-29T23:33:36.286: Get response from server: Got your message: line
+2016-01-29T23:33:36.287: Read a line from script file: PUT key4 value4
+2016-01-29T23:33:36.288: Send to server: PUT key4 value4
+2016-01-29T23:33:36.289: Get response from server: Got your message: line

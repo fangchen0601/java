@@ -1,0 +1,6 @@
+2016-01-29T22:20:34.271: Creating server...
+2016-01-29T22:20:34.326: Creating server done
+2016-01-29T22:20:34.437: Binding remote object's stub...
+2016-01-29T22:20:34.924: java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	java.rmi.UnmarshalException: error unmarshalling arguments; nested exception is: 
+	java.lang.ClassNotFoundException: KeyValue

@@ -1,0 +1,121 @@
+2016-01-30T00:58:36.233: Use default port number '1099' for rmiregistry...
+2016-01-30T00:58:36.292: Creating server...
+2016-01-30T00:58:36.293: Creating server done
+2016-01-30T00:58:36.424: Binding remote object's stub...
+2016-01-30T00:58:37.470: Binding done.
+2016-01-30T00:59:03.617: Got the command: PUT key1 value1
+2016-01-30T00:59:03.620: PUT key1, value1 SUCESS.
+2016-01-30T00:59:05.627: Got the command: PUT key1 value1
+2016-01-30T00:59:05.628: The server has the key pair, can't PUT again.
+2016-01-30T01:00:58.428: Got the command: PUT key1 value1
+2016-01-30T01:00:58.429: The server has the key pair, can't PUT again.
+2016-01-30T01:01:00.435: Got the command: GET key1
+2016-01-30T01:01:00.436: Get the value: value1 for the key: key1
+2016-01-30T01:01:02.444: Got the command: PUT key2 value2
+2016-01-30T01:01:02.445: PUT key2, value2 SUCESS.
+2016-01-30T01:01:04.452: Got the command: GET key2
+2016-01-30T01:01:04.453: Get the value: value2 for the key: key2
+2016-01-30T01:01:06.461: Got the command: PUT key3 value3
+2016-01-30T01:01:06.463: PUT key3, value3 SUCESS.
+2016-01-30T01:01:08.471: Got the command: GET key3
+2016-01-30T01:01:08.472: Get the value: value3 for the key: key3
+2016-01-30T01:01:10.480: Got the command: PUT key4 value4
+2016-01-30T01:01:10.481: PUT key4, value4 SUCESS.
+2016-01-30T01:01:12.488: Got the command: GET key4
+2016-01-30T01:01:12.489: Get the value: value4 for the key: key4
+2016-01-30T01:01:14.497: Got the command: PUT key5 value5
+2016-01-30T01:01:14.498: PUT key5, value5 SUCESS.
+2016-01-30T01:01:16.504: Got the command: GET key5
+2016-01-30T01:01:16.506: Get the value: value5 for the key: key5
+2016-01-30T01:01:18.513: Got the command: PUT key6 value6
+2016-01-30T01:01:18.514: PUT key6, value6 SUCESS.
+2016-01-30T01:01:20.521: Got the command: GET key6
+2016-01-30T01:01:20.522: Get the value: value6 for the key: key6
+2016-01-30T01:01:22.529: Got the command: PUT key7 value7
+2016-01-30T01:01:22.531: PUT key7, value7 SUCESS.
+2016-01-30T01:01:24.538: Got the command: GET key7
+2016-01-30T01:01:24.540: Get the value: value7 for the key: key7
+2016-01-30T01:01:26.553: Got the command: PUT key8 value8
+2016-01-30T01:01:26.554: PUT key8, value8 SUCESS.
+2016-01-30T01:01:28.561: Got the command: GET key8
+2016-01-30T01:01:28.563: Get the value: value8 for the key: key8
+2016-01-30T01:01:30.570: Got the command: PUT key9 value9
+2016-01-30T01:01:30.571: PUT key9, value9 SUCESS.
+2016-01-30T01:01:32.578: Got the command: GET key9
+2016-01-30T01:01:32.579: Get the value: value9 for the key: key9
+2016-01-30T01:01:34.584: Got the command: PUT key10 value10
+2016-01-30T01:01:34.585: PUT key10, value10 SUCESS.
+2016-01-30T01:01:36.592: Got the command: GET key10
+2016-01-30T01:01:36.593: Get the value: value10 for the key: key10
+2016-01-30T01:01:38.600: Got the command: DELETE key1
+2016-01-30T01:01:38.601: Removed the key: key1
+2016-01-30T01:01:40.609: Got the command: DELETE key2
+2016-01-30T01:01:40.611: Removed the key: key2
+2016-01-30T01:01:42.618: Got the command: DELETE key3
+2016-01-30T01:01:42.619: Removed the key: key3
+2016-01-30T01:01:44.626: Got the command: DELETE key4
+2016-01-30T01:01:44.628: Removed the key: key4
+2016-01-30T01:01:46.635: Got the command: DELETE key5
+2016-01-30T01:01:46.636: Removed the key: key5
+2016-01-30T01:01:48.643: Got the command: DELETE key6
+2016-01-30T01:01:48.645: Removed the key: key6
+2016-01-30T01:01:50.652: Got the command: DELETE key7
+2016-01-30T01:01:50.654: Removed the key: key7
+2016-01-30T01:01:52.661: Got the command: DELETE key8
+2016-01-30T01:01:52.662: Removed the key: key8
+2016-01-30T01:01:54.669: Got the command: DELETE key9
+2016-01-30T01:01:54.670: Removed the key: key9
+2016-01-30T01:01:56.677: Got the command: DELETE key10
+2016-01-30T01:01:56.678: Removed the key: key10
+2016-01-30T01:01:58.686: Got the command: PUT key11 value11
+2016-01-30T01:01:58.687: PUT key11, value11 SUCESS.
+2016-01-30T01:02:00.696: Got the command: PUT key12 value11
+2016-01-30T01:02:00.697: PUT key12, value11 SUCESS.
+2016-01-30T01:02:02.703: Got the command: PUT key13 value13
+2016-01-30T01:02:02.705: PUT key13, value13 SUCESS.
+2016-01-30T01:02:04.712: Got the command: PUT key14 value14
+2016-01-30T01:02:04.713: PUT key14, value14 SUCESS.
+2016-01-30T01:02:06.719: Got the command: PUT key15 value15
+2016-01-30T01:02:06.721: PUT key15, value15 SUCESS.
+2016-01-30T01:02:08.726: Got the command: PUT key16 value16
+2016-01-30T01:02:08.727: PUT key16, value16 SUCESS.
+2016-01-30T01:02:10.732: Got the command: PUT key17 value17
+2016-01-30T01:02:10.734: PUT key17, value17 SUCESS.
+2016-01-30T01:02:12.740: Got the command: PUT key18 value18
+2016-01-30T01:02:12.742: PUT key18, value18 SUCESS.
+2016-01-30T01:02:14.750: Got the command: PUT key19 value19
+2016-01-30T01:02:14.752: PUT key19, value19 SUCESS.
+2016-01-30T01:02:16.759: Got the command: PUT key20 value20
+2016-01-30T01:02:16.761: PUT key20, value20 SUCESS.
+2016-01-30T01:02:18.768: Got the command: DELETE key11
+2016-01-30T01:02:18.769: Removed the key: key11
+2016-01-30T01:02:20.776: Got the command: DELETE key12
+2016-01-30T01:02:20.777: Removed the key: key12
+2016-01-30T01:02:22.783: Got the command: DELETE key13
+2016-01-30T01:02:22.785: Removed the key: key13
+2016-01-30T01:02:24.792: Got the command: DELETE key14
+2016-01-30T01:02:24.793: Removed the key: key14
+2016-01-30T01:02:26.799: Got the command: DELETE key15
+2016-01-30T01:02:26.801: Removed the key: key15
+2016-01-30T01:02:28.808: Got the command: DELETE key16
+2016-01-30T01:02:28.809: Removed the key: key16
+2016-01-30T01:02:30.815: Got the command: DELETE key17
+2016-01-30T01:02:30.816: Removed the key: key17
+2016-01-30T01:02:32.823: Got the command: DELETE key18
+2016-01-30T01:02:32.824: Removed the key: key18
+2016-01-30T01:02:34.828: Got the command: DELETE key19
+2016-01-30T01:02:34.829: Removed the key: key19
+2016-01-30T01:02:36.835: Got the command: DELETE key20
+2016-01-30T01:02:36.837: Removed the key: key20
+2016-01-30T01:02:38.843: Got the command: UNKNOWN key1 value1
+2016-01-30T01:02:38.845: Error! Malformed Request! The request is: UNKNOWN key1 value1
+2016-01-30T01:02:40.851: Got the command: PUT
+2016-01-30T01:02:40.853: Error! Malformed Request! The request is: PUT
+2016-01-30T01:02:42.857: Got the command: GET
+2016-01-30T01:02:42.857: Error! Malformed Request! The request is: GET
+2016-01-30T01:02:44.863: Got the command: DELETE
+2016-01-30T01:02:44.864: Error! Malformed Request! The request is: DELETE
+2016-01-30T01:02:46.870: Got the command: GET unexistkey
+2016-01-30T01:02:46.871: There is no key: unexistkey in the server store.
+2016-01-30T01:02:48.879: Got the command: DELETE unexistkey
+2016-01-30T01:02:48.880: There is no key: unexistkey in the server store.

@@ -1,0 +1,2 @@
+2016-01-30T00:58:41.070: Server IP is not provided as a parameter, use default ip address: 127.0.0.1
+2016-01-30T00:58:43.299: Read a line from script file: PUT key1 value1
