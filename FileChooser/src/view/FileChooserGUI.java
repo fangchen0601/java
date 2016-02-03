@@ -38,6 +38,7 @@ public class FileChooserGUI extends JFrame implements ActionListener {
 		//masterPanel.add(makeButton("south"), BorderLayout.SOUTH);
 		masterPanel.add(makeButton("west"), BorderLayout.WEST);
 		masterPanel.add(makeButton("east"), BorderLayout.EAST);
+		masterPanel.add(makeButton("south"), BorderLayout.SOUTH);
 		
 		
 		
