@@ -75,20 +75,20 @@ public final class FirstJFrame extends JFrame { // JFrame is the top level windo
          */
         
         // Note that BorderLayout is the default layout manager for JFrame.
-        final JPanel buttonPanel = new JPanel(new GridLayout(3,1));
+        final JPanel buttonPanel = new JPanel(new GridLayout(3, 1));
         buttonPanel.add(new JButton("123"));
         buttonPanel.add(new JButton("456"));
         buttonPanel.add(new JButton("789"));
         //final JPanel westPanel = new JPanel(new BorderLayout());
         //westPanel.add(buttonPanel, BorderLayout.WEST);
-        JPanel northPanel = new JPanel(new BorderLayout());
+        final JPanel northPanel = new JPanel(new BorderLayout());
         northPanel.add(buttonPanel, BorderLayout.WEST);
         add(northPanel, BorderLayout.NORTH);
         
-        final JPanel buttonPanel2 = new JPanel(new GridLayout(2,1));
+        final JPanel buttonPanel2 = new JPanel(new GridLayout(2, 1));
         buttonPanel2.add(new JButton("bar1"));
         buttonPanel2.add(new JButton("bar2"));
-        JPanel southPanel = new JPanel(new BorderLayout());
+        final JPanel southPanel = new JPanel(new BorderLayout());
         southPanel.add(buttonPanel2, BorderLayout.WEST);
         add(southPanel, BorderLayout.SOUTH);
         
