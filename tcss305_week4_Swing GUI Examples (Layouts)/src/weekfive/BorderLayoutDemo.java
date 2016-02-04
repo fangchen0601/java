@@ -61,6 +61,10 @@ public class BorderLayoutDemo extends JPanel {
         final JButton center = new JButton("Center");        
         final JPanel centerPanel = new JPanel();
         centerPanel.add(center);
+        
+
+        
+        
         add(centerPanel, BorderLayout.CENTER);  
   
     }
