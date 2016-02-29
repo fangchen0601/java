@@ -49,12 +49,7 @@ public abstract class AbstractTool implements ToolInterface {
         String name = this.getClass().getSimpleName();
         myTool = name;
         name = name.toLowerCase();
-        //final String iconName = "/images/" + name;
-        
-//        URL[] urls = ((URLClassLoader)ClassLoader.getSystemClassLoader()).getURLs();
-//        for (URL url : urls) {
-//            System.out.println(url);
-//        }
+
         
         URL urlC2 = ClassLoader.getSystemResource("images/" + name + "_bw.gif");
         System.out.println("by ClassLoader.getSystemResource: "+ urlC2 );
@@ -69,33 +64,6 @@ public abstract class AbstractTool implements ToolInterface {
         myIcon = new ImageIcon(urlC2);
         
 
-//        
-//        URL url1 = this.getClass().getClassLoader().getResource( "../" + name + ".gif");
-//        URL url2 = this.getClass().getClassLoader().getResource( "/images/" + name + ".gif");
-//        URL url3 = this.getClass().getClassLoader().getResource( name + ".gif");
-//        
-//        if (url1 ==  null) {
-//        	System.out.println("url1 null.");
-//        }
-//        
-//        if (url2 ==  null) {
-//        	System.out.println("url2 null.");
-//        }
-//        
-//        if (url3 ==  null) {
-//        	System.out.println("url3 null.");
-//        }
-//        
-//        
-        
-        //Image image1 = Toolkit.getDefaultToolkit().getImage(url1);
-        
-        //Image image2 = Toolkit.getDefaultToolkit().getImage(url2);
-        
-
-        
-        //myIcon = new ImageIcon(url);
-        //myLargeIcon = new ImageIcon(iconName + ".gif");
     }
     
     /**
