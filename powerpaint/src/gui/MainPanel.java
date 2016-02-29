@@ -2,15 +2,21 @@ package gui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
 
+import javax.imageio.ImageIO;
 import javax.swing.AbstractAction;
 import javax.swing.AbstractButton;
 import javax.swing.Action;
@@ -19,6 +25,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JColorChooser;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -33,6 +40,7 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 import tool.Ellipse;
 import tool.Line;
@@ -87,6 +95,11 @@ public class MainPanel extends JPanel {
      * the button to undo all changes.
      */
     private static JMenuItem myUndoButton;
+    
+    /**
+     * the button to save.
+     */
+    private static JMenuItem mySaveButton;
     
     /**
      * The menu bar.
@@ -261,6 +274,19 @@ public class MainPanel extends JPanel {
     private JMenu createFileMenu(final JFrame theFrame) {
         final JMenu fileMenu = new JMenu("File");
         fileMenu.setMnemonic(KeyEvent.VK_F);
+        
+        //add save item
+        final JMenuItem save = new JMenuItem("Save");
+        save.setMnemonic(KeyEvent.VK_V);
+        save.addActionListener(new SaveListener());
+        
+        mySaveButton = save;
+        mySaveButton.setEnabled(false);
+        fileMenu.add(save);
+        fileMenu.addSeparator();
+        
+        
+        
         //add JMenu item - Undo to file menu
         final JMenuItem undo = new JMenuItem("Undo all changes");
         myUndoButton = undo;
@@ -374,6 +400,7 @@ public class MainPanel extends JPanel {
      */
     public static void setUndoButton(final boolean theVisible) {
         myUndoButton.setEnabled(theVisible);
+        mySaveButton.setEnabled(theVisible);
     }
     
     /**
@@ -488,5 +515,86 @@ public class MainPanel extends JPanel {
             
         }
         
+    } //end of inner class Color chooser
+    
+    /**
+     * save listener.
+     * @author fangchen
+     * @version 1.0
+     */
+    private class SaveListener extends AbstractAction {
+
+		/**
+		 *	generated serial.
+		 */
+		private static final long serialVersionUID = -3709547693826891802L;
+
+		@Override
+		public void actionPerformed(ActionEvent theEvent) {
+			JFileChooser fileChooser = new JFileChooser();
+			FileNameExtensionFilter filter = new FileNameExtensionFilter("Image Files", "jpg", "png", "gif", "jpeg");
+			fileChooser.setFileFilter(filter);
+			final int returnVal = fileChooser.showSaveDialog(MainPanel.this);
+			
+			if (returnVal == JFileChooser.APPROVE_OPTION) {
+				final File file = fileChooser.getSelectedFile();
+				
+				if (file != null) {
+                    int n = 1; //indicator of saving file or not, 1 means not
+                     /*
+                      * user provide a file name and wants to save.
+                      * This file name could be a new file name or
+                      * an existing file name in this directory.
+                      */
+                    if (file.exists()) {         //try to overwrite
+                         
+                         /*open a new dialog, saying: [<filename> already exists. Do you 
+                          * want to replace it?] There should be two buttons, one Cancel
+                          * and the other Replace.
+                         */
+                        final Object[] options = {"Replace", "Cancel"};
+                        final String message = "\"" + file.getName() 
+                                         + "\" already exists. Do you want to replace it?";
+                        n = JOptionPane.showOptionDialog(null,
+                                                          message,
+                                                          "Warning",
+                                                          JOptionPane.OK_CANCEL_OPTION,
+                                                          JOptionPane.WARNING_MESSAGE,
+                                                          null,
+                                                          options,
+                                                          options[0]);
+                    } else {           //file does not exist, just save it.
+                         n = 0;      
+                    }
+                    if (n == 0) {
+                        //save image
+                    	Dimension size = myDrawPanel.getSize();
+                    	BufferedImage image = new BufferedImage(
+                                size.width, size.height 
+                                          , BufferedImage.TYPE_INT_RGB);
+                    	
+                    	Graphics2D g2 = image.createGraphics();
+                    	myDrawPanel.paint(g2);
+                    	
+                    	try {
+                    		//final String ext = "";
+                    		int i = file.getName().lastIndexOf('.');
+                    		if ( i < 0 ) {
+                    			String fname = file.getAbsolutePath();
+                    			File newFile = new File(fname + ".jpg");
+                    			ImageIO.write(image, "jpg", newFile);
+                    		} else {
+                    			ImageIO.write(image, "jpg", file);
+                    		}
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							System.out.println(e.getMessage());
+						}
+                        
+                    }
+                 } //file is not null
+			}
+		}
+    	
     }
 }
