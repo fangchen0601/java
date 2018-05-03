@@ -1,2 +1,1 @@
-# fangrepository
-asdfasdfasdf
+Some java projects
